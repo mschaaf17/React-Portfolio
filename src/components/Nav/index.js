@@ -1,15 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import selfImage from "../../assets/selfImage/self-photo.JPG";
 
-function Nav() {
-    const categories =[
-        {name: 'About Me', description:'information about me'},
-        {name: 'Portfolio', description: 'Examples of projects'},
-        {name: 'Resume', description:'recent work experience'}
-    ];
-    const handleClick =() => {
-        console.log("click handled")
-    }
+function Nav(props) {
+    const {
+      categories = [],
+      setCurrentCategory,
+      currentCategory,
+    } = props
+  
+    useEffect(() => {
+      document.title = currentCategory.name
+    }, [currentCategory])
+
   return (
     <header>
       <div class="p-5">
@@ -27,20 +29,33 @@ function Nav() {
         <nav>
           <ul className="flex-row">
             <li className="mx-2">
-              <a href="#about" onClick={() => handleClick()}> 
+              <a href="#about" 
+              // onClick={()=> setContactSelected(false)}
+              > 
                 About me
               </a>
             </li>
             <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
+            <span 
+            // onClick={() => setContactSelected(true)}
+            >
               Contact
             </span>
           </li>
-          {
-            categories.map((category) => (
-              <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                    {category.name}
+          {categories.map((category) => (
+            <li
+              className={`mx-1 ${
+                currentCategory.name === category.name && 'navActive'
+                }`}
+              key={category.name}
+            >
+              <span
+                onClick={() => {
+                  setCurrentCategory(category)
+                  // setContactSelected(false)
+                }}
+              >
+                {category.name}
                 </span>
               </li>
             ))
