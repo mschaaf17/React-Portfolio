@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
-// import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 
@@ -13,20 +13,26 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
+  const [contactSelected, setContactSelected] =useState(false)
   return (
     <div class="flex">
       <Nav
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
-      <main>
-        <div>
-          <Contact></Contact>
+      <main class="flex">
+        
+        {!contactSelected ? (
+          <>
           <Gallery currentCategory={currentCategory}></Gallery>
           <About></About>
-        </div>
+          </>
+        ) : (
+          <Contact></Contact>
+        )}
       </main>
     </div>
   );
