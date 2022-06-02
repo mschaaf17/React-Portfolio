@@ -1,19 +1,8 @@
-import React, {useEffect} from "react";
+import React from "react";
+import { Link } from 'react-router-dom';
 import selfImage from "../../assets/selfImage/self-photo.JPG";
 
-function Nav(props) {
-    const {
-      categories = [],
-      setCurrentCategory,
-      contactSelected,
-      currentCategory,
-      setContactSelected,
-      
-    } = props
-  
-    useEffect(() => {
-      document.title = currentCategory.name
-    }, [currentCategory])
+function Nav() {
 
   return (
     <header>
@@ -32,37 +21,19 @@ function Nav(props) {
         <nav>
           <ul className="flex-row">
             <li className="mx-2">
-              <a href="#about" 
-              onClick={()=> setContactSelected(false)}
-              > 
-                About me
-              </a>
+              <Link to='/about'>About Me</Link>
             </li>
-            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span 
-             onClick={() => setContactSelected(true)}
-            >
-              Contact
-            </span>
-          </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category)
-                  setContactSelected(false)
-                }}
-              >
-                {category.name}
-                </span>
-              </li>
-            ))
-            }
+            <li className="mx-2">
+              <Link to='/portfolio'>Portfolio</Link>
+            </li>
+            
+            <li className="mx-2">
+              <Link to='/resume'>Resume</Link>
+            </li>
+            <li className="mx-2">
+              <Link to='/contact'>Contact Me</Link>
+            </li>
+           
           </ul>
         </nav>
       </div>
