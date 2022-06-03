@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to right, #60bfd9, #783c92);
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.container-width{
+  margin: 12px 100px 25px 100px;
+  padding: 50px
+}
+
+
+.projects {
+  margin: 5px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+
+
+/* .projects img {
+  height: 40%;
+} */
+
+.projects h4 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+.projects p {
+  padding: 5px;
+}
+.single-project {
+  border: solid 2px white;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 2);
+  margin-bottom: 30px;
+}
+
+.self {
+  margin: auto;
+}
+
+/* skills */
+.skills {
+  text-align: center;
+}
+
+/* .nav-section {
+  padding-right: 5px;
+} */
+@media (min-width: 600px) {
+  .self {
+    height: 50%;
+    width: 40%;
+  }
 }

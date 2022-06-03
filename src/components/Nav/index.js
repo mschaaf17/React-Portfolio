@@ -17,28 +17,35 @@ function Nav(props) {
 
   return (
     <header>
-      <div class="p-5">
-        <h2 className="font-bold">
+      <div class="flex-column px-5 py-3 m-3 text-center border rounded nav-section">
+        <h2 className="font-bold text-[20px] pl-1">
           <a data-testid="link" href="/">
             Madison's Portfolio
           </a>
         </h2>
         <img
           src={selfImage}
-          className="my-2"
-          style={{ width: "20%", height: "20%" }}
+          className="my-2" class="self"
+          // style={{ width: "80%", height: "30%" }}
           alt="self"
         />
         <nav>
           <ul className="flex-row">
-            <li className="mx-2">
+            <li className="mx-1">
               <a href="#about" 
               onClick={()=> setContactSelected(false)}
               > 
                 About me
               </a>
             </li>
-            <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+            <li className="mx-1">
+              <a href="#portfolio" 
+              onClick={()=> setContactSelected(false)}
+              > 
+                Portfolio
+              </a>
+            </li>
+            <li className={`mx-1 ${contactSelected && 'navActive'}`}>
             <span 
              onClick={() => setContactSelected(true)}
             >
