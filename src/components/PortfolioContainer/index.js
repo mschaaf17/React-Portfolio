@@ -3,6 +3,7 @@ import Nav from "../Nav";
 import About from "../About";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
+import Resume from "../Resume";
 // import Gallery from "./components/Gallery";
 
 
@@ -17,6 +18,9 @@ export default function PortfolioContainer() {
       }
       if (currentPage === 'Portfolio') {
         return <Portfolio />;
+      }
+      if (currentPage === 'Resume') {
+          return <Resume />
       }
       return <Contact />;
     };
