@@ -13,6 +13,7 @@ function Resume() {
     return(
         <div class="border p-5">
         <h1>Review my resume here</h1>
+        
         <Gallery />
         </div>
 
