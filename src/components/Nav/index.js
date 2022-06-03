@@ -1,10 +1,10 @@
 import React, {useEffect} from "react";
 import selfImage from "../../assets/selfImage/self-photo.JPG";
 
-function Nav(currentPage, handlePageChange) {
+function Nav({currentPage, handlePageChange}) {
   
     useEffect(() => {
-      document.title = currentPage.name
+      document.title = currentPage
     }, [currentPage])
 
   return (
