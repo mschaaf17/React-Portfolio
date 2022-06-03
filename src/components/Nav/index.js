@@ -22,11 +22,11 @@ function Nav(currentPage, handlePageChange) {
           alt="self"
         />
         <nav>
-          <ul className="flex-row">
+          <ul className="flex-row nav nav-tabs">
             <li className="mx-1">
               <a href="#about" 
               onClick={()=> handlePageChange('About')}
-              // className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
               > 
                 About me
               </a>
@@ -35,7 +35,7 @@ function Nav(currentPage, handlePageChange) {
               <a href="#portfolio" 
                     onClick={()=> handlePageChange('Portfolio')}
                     
-          // className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
               > 
                 Portfolio
               </a>
@@ -43,6 +43,8 @@ function Nav(currentPage, handlePageChange) {
             <li className='mx-1'>
             <a href='#contact'
              onClick={() => handlePageChange('Contact')}
+                       className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+
             >
               Contact
             </a>

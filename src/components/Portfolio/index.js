@@ -9,7 +9,7 @@ function Portfolio() {
         <div class="projects">
 
             <div class="single-project">
-               <h4> <a href="https://code-prep-project.herokuapp.com/" target="_blank">
+               <h4> <a href="https://code-prep-project.herokuapp.com/">
                     <img class= "w-60 h-50" src={codePrep} alt="Website example of Code Prep."></img>
                 Code Prep</a>
                 </h4>
@@ -17,7 +17,7 @@ function Portfolio() {
             </div>
 
             <div class="single-project">
-               <h4> <a href="https://noahslusher.github.io/NP-trip-planner/" target="_blank">
+               <h4> <a href="https://noahslusher.github.io/NP-trip-planner/">
                     <img class= "w-60 h-40" src={parkAdvisor} alt="Website example of Park Advisor."></img>
                 Park Advisor</a>
                 </h4>

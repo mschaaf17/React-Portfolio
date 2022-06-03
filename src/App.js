@@ -3,14 +3,14 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-import Gallery from "./components/Gallery";
+// import Gallery from "./components/Gallery";
 
 function App() {
 
   const [currentPage, setCurrentPage] = useState('About')
 
   const renderPage = () => {
-    if (currentPage === "About") {
+    if (currentPage === 'About') {
       return <About/>
     }
     if (currentPage === 'Portfolio') {
