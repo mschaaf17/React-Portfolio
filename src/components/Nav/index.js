@@ -1,19 +1,11 @@
 import React, {useEffect} from "react";
 import selfImage from "../../assets/selfImage/self-photo.JPG";
 
-function Nav(props) {
-    const {
-      categories = [],
-      setCurrentCategory,
-      contactSelected,
-      currentCategory,
-      setContactSelected,
-      
-    } = props
+function Nav(currentPage, handlePageChange) {
   
     useEffect(() => {
-      document.title = currentCategory.name
-    }, [currentCategory])
+      document.title = currentPage.name
+    }, [currentPage])
 
   return (
     <header>
@@ -33,43 +25,28 @@ function Nav(props) {
           <ul className="flex-row">
             <li className="mx-1">
               <a href="#about" 
-              onClick={()=> setContactSelected(false)}
+              onClick={()=> handlePageChange('About')}
+              // className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
               > 
                 About me
               </a>
             </li>
             <li className="mx-1">
               <a href="#portfolio" 
-              onClick={()=> setContactSelected(false)}
+                    onClick={()=> handlePageChange('Portfolio')}
+                    
+          // className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
               > 
                 Portfolio
               </a>
             </li>
-            <li className={`mx-1 ${contactSelected && 'navActive'}`}>
-            <span 
-             onClick={() => setContactSelected(true)}
+            <li className='mx-1'>
+            <a href='#contact'
+             onClick={() => handlePageChange('Contact')}
             >
               Contact
-            </span>
+            </a>
           </li>
-          {categories.map((category) => (
-            <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected && 'navActive'
-                }`}
-              key={category.name}
-            >
-              <span
-                onClick={() => {
-                  setCurrentCategory(category)
-                  setContactSelected(false)
-                }}
-              >
-                {category.name}
-                </span>
-              </li>
-            ))
-            }
           </ul>
         </nav>
       </div>
