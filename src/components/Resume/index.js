@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import MadisonResume from '../../assets/images/Resume- Madison Schaaf (Updated 4_2022 tech).pdf';
+import linkedInIcon from '../../assets/images/linkedin-icon.gif';
+// import frozenlinkedIn from '../../assets/images/frozen-linkedin.PNG'
+import facebookIcon from '../../assets/images/facebook-icon.gif'
 import Gallery from "../Gallery";
 
 function Resume() {
@@ -28,9 +31,9 @@ function Resume() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const [contactSelected, setContactSelected] = useState(false);
   return (
-    <div class="border p-5">
-      <h1>Learn more:</h1>
-      <ul>
+    <div class="info-container">
+    <h1 class="pl-2">Learn more:</h1>
+    <ul class="pl-5 py-2 ">
         {categories.map((category) => (
           <li
             className={`mx-1 ${
@@ -51,21 +54,34 @@ function Resume() {
           </li>
         ))}
       </ul>
+    <div class="py-5 mx-5">
+      
+      
       <Gallery currentCategory={currentCategory}></Gallery>
-      <div>
+      
+    </div>
+    <div class='flex justify-around text-[white] p-5'>
         <a
-          class="text-[white]"
+          class="text-[white] flex pr-1"
           href={MadisonResume} download
         >
-          Download my resume
+          Download resume 💾
         </a>{" "}
-        Follow me on{" "}
+
+
+        Follow me:{" "}
         <a
-          class="text-[#2563eb]"
           href="https://www.linkedin.com/in/madison-schaaf-b3b892102/"
           target="_blank"
         >
-          LinkedIn{" "}
+          <img className='icon pr-1'src={linkedInIcon} alt="linkedIn logo"/>
+          
+        </a>
+        <a
+          href="https://www.linkedin.com/in/madison-schaaf-b3b892102/"
+          target="_blank"
+        >
+          <img className='icon'src={facebookIcon} alt="facebook logo"/>
         </a>
       </div>
     </div>

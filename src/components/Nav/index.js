@@ -9,7 +9,7 @@ function Nav({currentPage, handlePageChange}) {
 
   return (
     <header>
-      <div class="flex-column px-5 py-3 m-3 text-center border rounded nav-section">
+      <div class="flex-column py-3 m-3 text-center border rounded nav-section">
         <h2 className="font-bold text-[20px] pl-1">
           <a data-testid="link" href="/">
             Madison's Portfolio
@@ -18,7 +18,7 @@ function Nav({currentPage, handlePageChange}) {
         <img
           src={selfImage}
           className="my-2" class="self"
-          // style={{ width: "80%", height: "30%" }}
+          style={{ width: "80%", height: "30%" }}
           alt="self"
         />
         <nav>
