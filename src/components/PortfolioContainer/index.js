@@ -28,11 +28,20 @@ export default function PortfolioContainer() {
     const handlePageChange = (page) => setCurrentPage(page);
   
     return (
-      <div className ="flex">
+      <div>
+        <div  className ="flex">
         {/* // TODO: Add a comment describing what we are passing as props */}
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         {/* // TODO: Add a comment explaining what is happening on the following line */}
         {renderPage()}
+        </div>
+          <footer className ='flex justify-between px-5'>
+          <h5>
+          ❤️ Made with love by Madison Schaaf. </h5>
+          <div>
+              &copy; 2022 Madison Schaaf, Portfolios
+          </div>
+      </footer>
       </div>
     );
   }

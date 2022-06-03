@@ -19,6 +19,23 @@ h1 {
   font-size: 32px;
   font-weight: bold;
 }
+button {
+  border: solid black 2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #60bfd9;
+}
+
+a:hover {
+color: #60bfd9;
+}
+
+li:hover {
+  color: #60bfd9;
+  cursor: pointer;
+}
 
 
 .container-width{
@@ -58,6 +75,10 @@ h1 {
 
 .self {
   margin: auto;
+}
+
+.address {
+  padding: 10px 5px;
 }
 
 /* skills */
