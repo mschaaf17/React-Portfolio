@@ -58,13 +58,22 @@ function Resume() {
       <Gallery currentCategory={currentCategory}></Gallery>
       
     </div>
-    <div class='flex justify-around text-[white] p-5'>
-        <a
+    <div>
+    <a
           class="text-[white] flex pr-1"
           href={MadisonResume} download
         >
           Download resume 💾
         </a>{" "}
+    </div>
+
+    <div class='follow'>
+        {/* <a
+          class="text-[white] flex pr-1"
+          href={MadisonResume} download
+        >
+          Download resume 💾
+        </a>{" "} */}
 
 
         Follow me:{" "}
@@ -76,7 +85,7 @@ function Resume() {
           
         </a>
         <a
-          href="https://www.linkedin.com/in/madison-schaaf-b3b892102/"
+          href="https://www.facebook.com/people/Maddy-Schaaf/100072535338867/"
           target="_blank"
         >
           <img className='icon'src={facebookIcon} alt="facebook logo"/>

@@ -9,7 +9,7 @@ function Nav({currentPage, handlePageChange}) {
 
   return (
     <header>
-      <div class="flex-column py-3 m-3 text-center nav-section">
+      <div class="nav-section">
         <h2 className="font-bold text-[20px] pl-1">
           <a data-testid="link" href="/">
             Madison's Portfolio
@@ -22,16 +22,15 @@ function Nav({currentPage, handlePageChange}) {
           alt="self"
         />
         <nav>
-          <ul className="flex-row nav nav-tabs">
-            <li className="mx-1 ">
+          <ul className="nav nav-tabs">
+          <li className={"m-1 " + (currentPage === 'About' ? 'nav-link active' : 'nav-link')}>
               <a href="#about" 
               onClick={()=> handlePageChange('About')}
-              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
               > 
                 About me
               </a>
             </li>
-            <li className={"mx-1 " + (currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link')}>
+            <li className={"m-1 " + (currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link')}>
               <a href="#portfolio" 
                     onClick={()=> handlePageChange('Portfolio')}
                     
@@ -39,20 +38,18 @@ function Nav({currentPage, handlePageChange}) {
                 Portfolio
               </a>
             </li>
-            <li className='mx-1'>
+            <li className={"m-1 " + (currentPage === 'Resume' ? 'nav-link active' : 'nav-link')}>
             <a href='#resume'
              onClick={() => handlePageChange('Resume')}
-                       className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
 
             >
               Resume
             </a>
           </li>
 
-          <li className='mx-1'>
+          <li className={"m-1 " + (currentPage === 'Contact' ? 'nav-link active' : 'nav-link')}>
             <a href='#contact'
              onClick={() => handlePageChange('Contact')}
-                       className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
 
             >
               Contact
