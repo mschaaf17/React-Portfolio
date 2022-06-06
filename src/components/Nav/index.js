@@ -10,7 +10,7 @@ function Nav({currentPage, handlePageChange}) {
   return (
     <header>
       <div class="nav-section">
-        <h2 className="font-bold text-[20px] pl-1">
+        <h2 className="font-bold text-[20px] pt-5 pl-1">
           <a data-testid="link" href="/">
             Madison's Portfolio
           </a>
@@ -22,7 +22,7 @@ function Nav({currentPage, handlePageChange}) {
           alt="self"
         />
         <nav>
-          <ul className="nav nav-tabs">
+          <ul className="nav nav-tabs text-white text-[18px]">
           <li className={"m-1 " + (currentPage === 'About' ? 'nav-link active' : 'nav-link')}>
               <a href="#about" 
               onClick={()=> handlePageChange('About')}
@@ -35,7 +35,7 @@ function Nav({currentPage, handlePageChange}) {
                     onClick={()=> handlePageChange('Portfolio')}
                     
               > 
-                Portfolio
+                Projects
               </a>
             </li>
             <li className={"m-1 " + (currentPage === 'Resume' ? 'nav-link active' : 'nav-link')}>

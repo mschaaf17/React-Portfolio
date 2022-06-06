@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import MadisonResume from '../../assets/images/Resume- Madison Schaaf (Updated 4_2022 tech).pdf';
 import linkedInIcon from '../../assets/images/linkedin-icon.gif';
-// import frozenlinkedIn from '../../assets/images/frozen-linkedin.PNG'
 import facebookIcon from '../../assets/images/facebook-icon.gif'
 import Gallery from "../Gallery";
 
@@ -32,7 +31,7 @@ function Resume() {
   return (
     <div class="info-container">
     <h1 class="pl-2">Learn more:</h1>
-    <ul class="pl-5 py-2 ">
+    <ul class="pl-5 py-2 text-[#e0f2fe] text-[20px]">
         {categories.map((category) => (
           <li
             className={`mx-1 ${
@@ -60,7 +59,7 @@ function Resume() {
     </div>
     <div>
     <a
-          class="text-[white] flex pr-1"
+          class="text-[#e0f2fe] text-[18px] flex pr-1"
           href={MadisonResume} download
         >
           Download resume 💾
@@ -68,15 +67,7 @@ function Resume() {
     </div>
 
     <div class='follow'>
-        {/* <a
-          class="text-[white] flex pr-1"
-          href={MadisonResume} download
-        >
-          Download resume 💾
-        </a>{" "} */}
 
-
-        Follow me:{" "}
         <a
           href="https://www.linkedin.com/in/madison-schaaf-b3b892102/"
           target="_blank"

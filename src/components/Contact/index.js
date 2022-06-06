@@ -3,14 +3,9 @@ import { validateEmail} from '../../utils/helpers';
 
 
 function Contact() {
-    // const [email, setEmail] =useState('')
-    // const [name, setName] =useState('')
-    // const [message, setMessage] =useState('')
-
-
+    
      const [formState, setFormState] =useState({name: '', email: '', message: ''})
     const [errorMessage, setErrorMessage] = useState('')
-    //  const {formName, formEmail, formMessage} =formState
 
 
     const handleChange =(e) => {
@@ -18,13 +13,7 @@ function Contact() {
         const inputType = target.name
         const inputValue = target.value
     
-        // if(inputType === 'email') {
-        //     setEmail(inputValue)
-        // } else if (inputType === 'name') {
-        //     setName(inputValue)
-        // } else if (inputType === 'message') {
-        //     setMessage(inputValue)
-        // }
+      
         if (!e.target.value.length) {
             setErrorMessage(`${e.target.name} is required.`);
           } else {
@@ -42,11 +31,19 @@ function Contact() {
             setErrorMessage('Email is invalid');
             return;
         }
-        setErrorMessage('Form Submitted')
+        if(!formState.name.length) {
+            setErrorMessage('name required')
+            return
+        } 
+        
+         if(!formState.message.length) {
+            setErrorMessage('message required')
+            return
+         }
+
+        alert('Form Submitted')
         setFormState({name: '', email: '', message: ''})
-        // setEmail('')
-        // setName('')
-        // setMessage('')
+       
     }
 
 
