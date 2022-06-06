@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to right, #60bfd9, #783c92);
+  background: linear-gradient(to right, #60bfd9, #58b0a5);
 
 
 }
@@ -13,6 +13,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* all areas */
+/* every page container */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin: 11px;
+  border: solid 1px white;
+  border-radius: 5px;
+  height: 80vh;
+
 }
 
 h1 {
@@ -29,31 +45,52 @@ button:hover {
 }
 
 a:hover {
-color: #60bfd9;
+color: #6098d9;
 }
 
 li:hover {
-  color: #60bfd9;
+  color: #6098d9;
   cursor: pointer;
 }
 
-.icon {
-  border-radius: 75px;
-  height: 25px;
+.active {
+  color: #6098d9;
+}
+
+.navActive {
+  color: #6098d9;
 }
 
 
+/* nav section */
 
+.nav-section {
+  padding-right: 5px;
+  width: 90%;
+  height: 80vh;
+  border: solid 1px 19d6e3a3;
+  border-radius: 8px;
+  background: #19d6e3a3;
+  box-shadow: 0 30px 40px rgba(2, 85, 84, 0.5);
 
+}
+
+.self {
+  margin: auto;
+  border-radius: 8px;
+
+  
+}
+
+/* projects */
 .projects {
   margin: 5px 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 25px;
   
 }
-
-
 
 /* .projects img {
   height: 40%;
@@ -74,37 +111,28 @@ li:hover {
   margin-bottom: 30px;
 }
 
-.self {
-  margin: auto;
-  
-}
-
-.address {
-  padding: 10px 5px;
-}
-
-/* skills */
+/* resume */
 .skills {
   text-align: center;
   width: 100%;
 }
-.info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  margin: 11px;
-  border: solid 1px white;
-  border-radius: 5px;
 
+
+/* contact section */
+input, textarea {
+  border-radius: 8px;
+}
+.address {
+  padding: 10px 5px;
+}
+.icon {
+  border-radius: 75px;
+  height: 25px;
 }
 
-.nav-section {
-  padding-right: 5px;
-  width: 90%;
-  height: 80vh;
-}
+
+
+
 @media (min-width: 600px) {
   .self {
     height: 50%;

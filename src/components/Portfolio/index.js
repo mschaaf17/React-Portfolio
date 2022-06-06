@@ -4,7 +4,7 @@ import parkAdvisor from '../../assets/images/park-advisor.PNG'
 
 function Portfolio() {
     return(
-        <div class="border p-5 m-3">
+        <div class="info-container">
         <h1 id="portfolio" class="text-center">Projects</h1>
         <div class="projects">
 

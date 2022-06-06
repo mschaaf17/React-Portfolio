@@ -29,7 +29,6 @@ function Resume() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  const [contactSelected, setContactSelected] = useState(false);
   return (
     <div class="info-container">
     <h1 class="pl-2">Learn more:</h1>
@@ -38,7 +37,6 @@ function Resume() {
           <li
             className={`mx-1 ${
               currentCategory.name === category.name &&
-              !contactSelected &&
               "navActive"
             }`}
             key={category.name}
@@ -46,7 +44,7 @@ function Resume() {
             <span
               onClick={() => {
                 setCurrentCategory(category);
-                setContactSelected(false);
+               
               }}
             >
               {category.name}
