@@ -75,7 +75,7 @@ function Contact() {
         <address class="address">
         <p>Number upon request</p>
        <p> <a class="contact-info" href="mailto:madisonschaaf48@gmail.com">madisonschaaf48@gmail.com</a></p>
-        <p><a class="contact-info" href="https://github.com/mschaaf17">github.com/mschaaf17</a></p>
+        {/* <p><a class="contact-info" href="https://github.com/mschaaf17">github.com/mschaaf17</a></p> */}
         </address>
         </section>
         
