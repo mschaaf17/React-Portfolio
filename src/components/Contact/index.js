@@ -52,15 +52,15 @@ function Contact() {
         <h1>Contact Me</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
             <div class="text-[20px] m-5 px-5">
-                <label class="p-4" htmlFor="name">Name:</label>
+                <label class="p-4 text-white" htmlFor="name">Name:</label>
                 <br /> <input type="text" value={formState.name} onChange={handleChange} name="name"/>
             </div>
-            <div class="text-[20px] m-5 px-6">
-                <label class="p-4" htmlFor='email'>Email:</label>
+            <div class="text-[20px]  m-5 px-6">
+                <label class="p-4 text-white" htmlFor='email'>Email:</label>
                 <br /><input type="email" name="email" value={formState.email} onChange={handleChange}/>
             </div>
-            <div class="text-[20px] m-5 px-3">
-                <label class="p-6"htmlFor="message">Message:</label>
+            <div class="text-[20px]  m-5 px-3">
+                <label class="p-6 text-white"htmlFor="message">Message:</label>
                 <br /><textarea class="p-5 ml-3"name="message" rows="5" value={formState.message} onChange={handleChange}/>
 
             </div>
@@ -69,7 +69,7 @@ function Contact() {
                     <p className= "error-text">{errorMessage}</p>
                 </div>
             )}
-            <button class="text-[20px] mx-10 mb-2" type ="submit">Submit</button>
+            <button class="text-[20px] text-white  mx-10 mb-2" type ="submit">Submit</button>
             </form>
             
         <address class="address">

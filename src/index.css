@@ -23,8 +23,8 @@ code {
 
 .background {
   background-image: url("./assets/images/background.jpeg");
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
   box-sizing: border-box;
   background-repeat: no-repeat repeat;
   background-size: cover;
@@ -99,7 +99,7 @@ li:hover {
   border: solid 1px #19d6e3a3;
   border-radius: 5px;
   height: 90vh;
-  background: #52c1e5a3;
+  background: #177290a3;
   box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
 
 
@@ -113,7 +113,7 @@ li:hover {
   height: 90vh;
   border: solid 1px #19d6e3a3;
   border-radius: 5px;
-  background: #52c1e5a3;
+  background: #177290a3;
   box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
   text-align: center;
   display: flex;
@@ -135,10 +135,10 @@ nav li {
   margin: auto;
   border-radius: 8px;
   opacity: 98%;
-  box-shadow: 0 30px 100px rgba(32, 212, 212, .1)
-
+  box-shadow: 0 30px 100px rgba(32, 212, 212, .1);
   
 }
+
 .self::after {
   content: "";
   background-color: black;
@@ -154,12 +154,13 @@ nav li {
 
 /* projects */
 .projects {
-  /* margin: 5px 15px; */
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* padding: 25px; */
-  
+  /* flex-grow: 1; */
+  /* height: vh;
+   */
 }
 
 .projects img {
@@ -167,10 +168,10 @@ nav li {
   transition: 0.5s ease;
 }
 
-.projects img:hover {
+/* .projects img:hover {
   transform: scale(1.3) rotate(4deg); 
    cursor: pointer;
-}
+} */
 
 
 .projects h4 {
@@ -186,7 +187,17 @@ nav li {
   border: solid 2px white;
   border-radius: 8px;
   box-shadow: 0 30px 40px rgba(0, 0, 0, 2);
-  margin-bottom: 30px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+
+}
+
+.single-project:hover {
+  transform: scale(1.3) rotate(4deg); 
+   cursor: pointer;
 }
 
 /* resume */
@@ -227,86 +238,193 @@ input, textarea {
   height: 40px;
   padding-top: 5px;
 }
+.icon:hover {
+  transform: scale(1.3) rotate(4deg); 
+   cursor: pointer;
+}
 
 .facebook {
   border-radius: 75px;
   height: 40px;
 }
 
+.facebook:hover {
+  transform: scale(1.3) rotate(4deg); 
+   cursor: pointer;
+}
+
+
+.animation {
+  animation: wiggle 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes wiggle {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(1px, -1px) rotate(-1deg); }
+  60% { transform: translate(-1px, 2px) rotate(0deg); }
+  70% { transform: translate(-3px, 1px) rotate(-1deg); }
+  80% { transform: translate(3px, 1px) rotate(-1deg); }
+}
 
 
 
-@media (max-width: 750px) {
-  .info-container {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; */
-    width: 100%;
-    padding: 10px;
-    margin: 30px;
-    border: solid 1px #19d6e3a3;
-    border-radius: 5px;
-    background: #52c1e5a3;
-    box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
-  
-  
-  }
+@media (max-width: 850px) {
+ 
   .about {
     font-size: 14px;
   }
-
-  .nav-section {
-    width: 50%;
-    border: solid 1px #19d6e3a3;
-    border-radius: 5px;
-    background: #52c1e5a3;
-    box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
-    text-align: center;
-    padding: 3px 0;
-    margin: 50px 60px;
   
-  }
+/* projects */
+.projects {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects img {
+  border-radius: 8px 8px 0 0;
+  transition: 0.5s ease;
+}
+
+
+.projects h4 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+.projects p {
+  padding: 5px;
+}
+.single-project {
+  border: solid 2px white;
+  border-radius: 8px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 2);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.single-project img{
+  height: 100px;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  border: solid 1px #19d6e3a3;
+  border-radius: 5px;
+  height: 90vh;
+  background: #177290a3;
+  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
+
+
+}
+
+
+/* nav section */
+
+.nav-section {
+  width: 90%;
+  height: 90vh;
+  border: solid 1px #19d6e3a3;
+  border-radius: 5px;
+  background: #177290a3;
+  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3px 0;
+  margin: auto;
+
+  /* flex-column py-3 m-3 text-center  */
+}
 
 
 }
 
 @media (max-width: 600px) {
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    padding: 10px;
-    margin: 30px;
-    border: solid 1px #19d6e3a3;
-    border-radius: 5px;
-    background: #52c1e5a3;
-    box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
   
-  
-  }
-  .flex-section {
-    display: flex;
-    flex-direction: column;
-  }
   .about {
     font-size: 14px;
   }
+ 
+.icon {
+  padding: 0;
+  margin: 10px;
+}
+.facebook {
+  padding: 0;
+  margin: 10px;
+}
 
-  .nav-section {
-    width: 50%;
-    border: solid 1px #19d6e3a3;
-    border-radius: 5px;
-    background: #52c1e5a3;
-    box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
-    text-align: center;
-    padding: 3px 0;
-    margin: 50px 60px;
-  
-  }
+.single-project {
+  border: solid 2px white;
+  border-radius: 8px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 2);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
 
+.single-project img{
+  height: 60px;
+}
+.projects h4 {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1px;
+}
+.projects p {
+  padding: 1px;
+  font-size: 10px;
+}
+
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  border: solid 1px #19d6e3a3;
+  border-radius: 5px;
+  height: 90vh;
+  background: #177290a3;
+  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
+
+
+}
+
+
+/* nav section */
+
+.nav-section {
+  width: 90%;
+  height: 90vh;
+  border: solid 1px #19d6e3a3;
+  border-radius: 5px;
+  background: #177290a3;
+  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3px 0;
+  margin: auto;
+
+  /* flex-column py-3 m-3 text-center  */
+}
 
 }
 

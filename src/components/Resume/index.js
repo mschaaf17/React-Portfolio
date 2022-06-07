@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MadisonResume from '../../assets/images/Resume- Madison Schaaf (Updated 4_2022 tech).pdf';
 import linkedInIcon from '../../assets/images/linkedin-icon.gif';
 import facebookIcon from '../../assets/images/facebook-icon.gif'
+import github from '../../assets/images/github.jpeg'
 import Gallery from "../Gallery";
 
 function Resume() {
@@ -74,6 +75,12 @@ function Resume() {
         >
           <img className='icon pr-1'src={linkedInIcon} alt="linkedIn logo"/>
           
+        </a>
+        <a
+          href="https://github.com/mschaaf17"
+          target="_blank"
+        >
+          <img className='facebook animation'src={github} alt="githu logo"/>
         </a>
         <a
           href="https://www.facebook.com/people/Maddy-Schaaf/100072535338867/"

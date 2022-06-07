@@ -1,6 +1,7 @@
 import React from 'react';
 import linkedInIcon from '../../assets/images/linkedin-icon.gif';
 import facebookIcon from '../../assets/images/facebook-icon.gif'
+import github from '../../assets/images/github.jpeg'
 
 function About() {
     return(
@@ -17,11 +18,19 @@ function About() {
           
         </a>
         <a
+          href="https://github.com/mschaaf17"
+          target="_blank"
+        >
+          <img className='facebook animation'src={github} alt="githu logo"/>
+        </a>
+        <a
           href="https://www.facebook.com/people/Maddy-Schaaf/100072535338867/"
           target="_blank"
         >
           <img className='facebook'src={facebookIcon} alt="facebook logo"/>
         </a>
+
+      
       </div>
         </div>
 

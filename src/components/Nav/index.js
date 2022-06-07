@@ -10,7 +10,7 @@ function Nav({currentPage, handlePageChange}) {
   return (
     <header>
       <div class="nav-section">
-        <h2 className="font-bold text-[20px] pt-5 pl-1">
+        <h2 className="font-bold text-[24px] pt-5 pl-1">
           <a data-testid="link" href="/">
             Madison's Portfolio
           </a>
