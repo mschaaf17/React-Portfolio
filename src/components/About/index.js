@@ -32,6 +32,7 @@ function About() {
 
       
       </div>
+      <a href="#Nav" class="text-indigo-200">Back to Navigation</a>
         </div>
 
     )

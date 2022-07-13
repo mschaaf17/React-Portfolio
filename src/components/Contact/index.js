@@ -49,19 +49,19 @@ function Contact() {
 
     return(
         <section class="info-container">
-        <h1>Contact Me</h1>
+        <h1 class="text-center">Contact Me</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
-            <div class="text-[20px] m-5 px-5">
+            <div class="text-[24px] ">
                 <label class="p-4 text-white" htmlFor="name">Name:</label>
                 <br /> <input type="text" value={formState.name} onChange={handleChange} name="name"/>
             </div>
-            <div class="text-[20px]  m-5 px-6">
+            <div class="text-[24px] pt-3">
                 <label class="p-4 text-white" htmlFor='email'>Email:</label>
                 <br /><input type="email" name="email" value={formState.email} onChange={handleChange}/>
             </div>
-            <div class="text-[20px]  m-5 px-3">
-                <label class="p-6 text-white"htmlFor="message">Message:</label>
-                <br /><textarea class="p-5 ml-3"name="message" rows="5" value={formState.message} onChange={handleChange}/>
+            <div class="text-[24px] pt-3">
+                <label class="pl-5 text-white"htmlFor="message">Message:</label>
+                <br /><textarea class="px-3"name="message" rows="3" value={formState.message} onChange={handleChange}/>
 
             </div>
             {errorMessage && (
@@ -69,15 +69,17 @@ function Contact() {
                     <p className= "error-text">{errorMessage}</p>
                 </div>
             )}
-            <button class="text-[20px] text-white  mx-10 mb-2" type ="submit">Submit</button>
+            <button class="text-[16px] text-white mt-2" type ="submit">Submit</button>
             </form>
             
-        <address class="address">
+        <address class="address text-[16px]">
         <p>Number upon request</p>
        <p> <a class="contact-info" href="mailto:madisonschaaf48@gmail.com">madisonschaaf48@gmail.com</a></p>
         {/* <p><a class="contact-info" href="https://github.com/mschaaf17">github.com/mschaaf17</a></p> */}
         </address>
+        <a href="#Nav" class="text-indigo-200">Back to Navigation</a>
         </section>
+        
         
 
     )

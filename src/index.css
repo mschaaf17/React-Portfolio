@@ -23,8 +23,8 @@ code {
 
 .background {
   background-image: url("./assets/images/background.jpeg");
-  /* width: 100%;
-  height: 100vh; */
+   width: 100%;
+  /*height: 100vh; */
   box-sizing: border-box;
   background-repeat: no-repeat repeat;
   background-size: cover;
@@ -91,10 +91,11 @@ li:hover {
 .info-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding: 10px;
+  justify-content: space-between;
+  width: 90%;
+  padding: 5px;
   margin: 30px;
   border: solid 1px #19d6e3a3;
   border-radius: 5px;
@@ -104,6 +105,9 @@ li:hover {
 
 
 }
+/* .spacing {
+  padding-top: 150px;
+} */
 
 
 /* nav section */
@@ -164,7 +168,7 @@ nav li {
 }
 
 .projects img {
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
   transition: 0.5s ease;
 }
 
@@ -182,6 +186,8 @@ nav li {
 }
 .projects p {
   padding: 5px;
+  text-align: center;
+  font-size: 14px;
 }
 .single-project {
   border: solid 2px white;
@@ -194,8 +200,21 @@ nav li {
   
 
 }
+.single-project-img {
+  width: 200px;
+  height: 150px;
+}
 
 .single-project:hover {
+  transform: scale(1.3) rotate(4deg); 
+   cursor: pointer;
+}
+.github {
+  border-radius: 50px;
+  max-width: 20px;
+  margin: auto;
+}
+.github:hover {
   transform: scale(1.3) rotate(4deg); 
    cursor: pointer;
 }
@@ -254,6 +273,7 @@ input, textarea {
 }
 
 
+
 .animation {
   animation: wiggle 2s;
   animation-iteration-count: infinite;
@@ -268,166 +288,146 @@ input, textarea {
 }
 
 
-
-@media (max-width: 850px) {
- 
+@media (max-width: 800px) {
   .about {
-    font-size: 14px;
+    font-size: 18px;
   }
-  
-/* projects */
-.projects {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.projects img {
-  border-radius: 8px 8px 0 0;
-  transition: 0.5s ease;
-}
-
-
-.projects h4 {
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
-  padding: 5px;
-}
-.projects p {
-  padding: 5px;
-}
-.single-project {
-  border: solid 2px white;
-  border-radius: 8px;
-  box-shadow: 0 30px 40px rgba(0, 0, 0, 2);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-
-.single-project img{
-  height: 40px;
-}
-.info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding: 10px;
-  margin: auto;
-  border: solid 1px #19d6e3a3;
-  border-radius: 5px;
-  height: 90vh;
-  background: #177290a3;
-  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
-
-
-}
-
-
-/* nav section */
-
-.nav-section {
-  width: 90%;
-  height: 90vh;
-  border: solid 1px #19d6e3a3;
-  border-radius: 5px;
-  background: #177290a3;
-  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 3px 0;
-  margin: auto;
-
-  /* flex-column py-3 m-3 text-center  */
-}
-
-
-}
-
-@media (max-width: 700px) {
-  
-  .about {
-    font-size: 14px;
+  .single-project-img {
+    width: 170px;
+    height: 100px;
   }
- 
-.icon {
-  padding: 0;
-  margin: 10px;
-}
-.facebook {
-  padding: 0;
-  margin: 10px;
-}
-
-.single-project {
-  border: solid 2px white;
-  border-radius: 8px;
-  box-shadow: 0 30px 40px rgba(0, 0, 0, 2);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-
-.single-project img{
-  height: 40px;
-}
-.projects h4 {
+  .projects h4 {
   font-size: 12px;
   text-align: center;
   font-weight: bold;
-  padding: 1px;
+  padding: 5px;
+}
+.projects p {
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+}
+
+@media (max-width: 730px) {
+  
+  .single-project-img {
+    width: 153px;
+    height: 70px;
+    margin: auto;
+  }
+  .projects h4 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+.projects p {
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+}
+
+
+@media (max-width: 705px) {
+  .about {
+    font-size: 16px;
+  }
+  .flex-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .self {
+    margin: auto;
+    min-height: 50%;
+    max-width: 40%;
+    object-fit: cover;
+    
+  }
+}
+
+@media (max-width: 580px) {
+  .about {
+    font-size: 12px;
+  }
+  .self {
+    margin: auto;
+    min-height: 50%;
+    max-width: 40%;
+    object-fit: cover;
+    
+  }
+
+
+}
+@media (max-width: 420px) {
+ 
+  .self {
+    margin: auto;
+    min-height: 40%;
+    max-width: 40%;
+    object-fit: cover;
+    
+  }
+
+
+}
+
+@media (max-width: 350px) {
+ .about {
+    font-size: 11px;
+  }
+  .resume-info {
+    font-size: 14px;
+  }
+  .single-project-img {
+    width: 150px;
+    height: 40px;
+    margin: auto;
+  }
+  .projects h4 {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
 }
 .projects p {
   padding: 1px;
-  font-size: 10px;
-}
-
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  padding: 10px;
-  margin: auto;
-  border: solid 1px #19d6e3a3;
-  border-radius: 5px;
-  height: 90vh;
-  background: #177290a3;
-  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
-
-
-}
-
-
-/* nav section */
-
-.nav-section {
-  width: 90%;
-  height: 90vh;
-  border: solid 1px #19d6e3a3;
-  border-radius: 5px;
-  background: #177290a3;
-  box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 3px 0;
-  margin: auto;
-
-  /* flex-column py-3 m-3 text-center  */
+  font-size: 8px;
 }
 
 }
 
+@media (max-width: 279px) {
+  .about {
+    font-size: 10px;
+  }
+   button {
+    font-size: 14px;
+   }
+   .icon {
+    border-radius: 75px;
+    height: 30px;
+    padding-top: 5px;
+  }
+  
+  .facebook {
+    border-radius: 75px;
+    height: 30px;
+  }
+  .follow {
+    /* border: solid 1px #23757a; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10vw;
+    background: linear-gradient( white, #a9dfea);
+    box-shadow: 0 30px 40px rgba(139, 190, 242, 0.5);
+    margin: 30px 0px;
+  }
 
-
-
+  
+ 
+ }

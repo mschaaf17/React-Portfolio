@@ -11,7 +11,7 @@ function Nav({currentPage, handlePageChange}) {
     <header>
       <div class="nav-section">
         <h2 className="font-bold text-[24px] pt-5 pl-1">
-          <a data-testid="link" href="/">
+          <a id="Nav" data-testid="link" href="/">
             Madison's Portfolio
           </a>
         </h2>
@@ -48,7 +48,7 @@ function Nav({currentPage, handlePageChange}) {
           </li>
 
           <li className={"m-1 " + (currentPage === 'Contact' ? 'nav-link active' : 'nav-link')}>
-            <a href='#contact'
+            <a href='#contact-form'
              onClick={() => handlePageChange('Contact')}
 
             >
