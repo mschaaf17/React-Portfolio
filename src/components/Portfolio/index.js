@@ -12,8 +12,8 @@ import stacked from '../../assets/images/stacked.png'
 function Portfolio() {
     return(
         <div className="info-container">
-        <h1 id="portfolio" class="heading-text">Projects</h1>
-        <div class="projects">
+        <h1  class="heading-text">Projects</h1>
+        <div id="portfolio" class="projects">
 
             <div className="single-project">
                <h4> <a href="https://code-prep-project.herokuapp.com/" target="_blank">
