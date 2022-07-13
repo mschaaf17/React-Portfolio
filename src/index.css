@@ -507,7 +507,7 @@ input, textarea {
 
 @media (max-width: 414px) {
  .about {
-    font-size: 16px;
+    font-size: 14px;
   }
   .resume-info {
     font-size: 14px;
@@ -543,7 +543,7 @@ input, textarea {
 
   }
   .about {
-    font-size: 14px;
+    font-size: 12px;
   }
   .github {
     height: 10px;
@@ -574,7 +574,7 @@ input, textarea {
 }
  @media ( max-width: 384px ) {
   .about {
-    font-size: 14px;
+    font-size: 12px;
   }
 
  }
