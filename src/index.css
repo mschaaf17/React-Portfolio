@@ -529,7 +529,7 @@ input, textarea {
 
   }
   .about {
-    font-size: 12px;
+    font-size: 10px;
   }
   .github {
     height: 10px;
@@ -553,6 +553,9 @@ input, textarea {
     padding: 1px;
     font-size: 14px;
     /* margin: 0 90px; */
+  }
+  .footer {
+    font-size: 10px;
   }
 }
 
