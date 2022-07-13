@@ -318,6 +318,11 @@ input, textarea {
 }
 }
 
+@media (max-width: 765px ) {
+  .about {
+    font-size: 16px;
+  }
+}
 @media (max-width: 730px) {
   
   .single-project-img {
@@ -338,6 +343,9 @@ input, textarea {
 }
 .heading-text, h2 {
   font-size: 38px;
+}
+.about {
+  font-size: 16px;
 }
 }
 
