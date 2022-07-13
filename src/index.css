@@ -579,7 +579,7 @@ input, textarea {
 
  }
 
-@media (max-width: 280px) {
+@media (max-width: 322px) {
   .about {
     font-size: 10px;
   }
