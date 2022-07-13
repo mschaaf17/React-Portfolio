@@ -49,7 +49,7 @@ function Contact() {
 
     return(
         <section class="info-container">
-        <h1 class="text-center text-[42px]">Contact Me</h1>
+        <h1 class="text-center heading-text">Contact Me</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
             <div class="text-[24px] ">
                 <label class="p-4 text-white" htmlFor="name">Name:</label>

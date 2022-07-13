@@ -43,7 +43,7 @@ code {
   0 0 40px #3b9ae8;
 }
 
-h1, h2 {
+.heading-text, h2 {
   font-size: 48px;
   font-weight: bold;
   color: white;
@@ -51,6 +51,15 @@ h1, h2 {
   0 0 20px #74b7c3, 0 0 30px #98a2a3,
   0 0 40px #3b9ae8;
 }
+/* }
+h1, h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px #a5d2ff, 0 0 10px #87c8d4,
+  0 0 20px #74b7c3, 0 0 30px #98a2a3,
+  0 0 40px #3b9ae8;
+} */
 button {
   border: solid white 2px;
   padding: 5px;

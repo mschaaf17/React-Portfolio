@@ -12,7 +12,7 @@ import stacked from '../../assets/images/stacked.png'
 function Portfolio() {
     return(
         <div className="info-container">
-        <h1 id="portfolio" class="text-[42px]">Projects</h1>
+        <h1 id="portfolio" class="heading-text">Projects</h1>
         <div class="projects">
 
             <div className="single-project">
