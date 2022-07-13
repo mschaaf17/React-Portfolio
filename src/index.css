@@ -543,7 +543,7 @@ input, textarea {
 
   }
   .about {
-    font-size: 8px;
+    font-size: 14px;
   }
   .github {
     height: 10px;
@@ -572,6 +572,12 @@ input, textarea {
     font-size: 10px;
   }
 }
+ @media ( max-width: 384px ) {
+  .about {
+    font-size: 12px;
+  }
+
+ }
 
 @media (max-width: 280px) {
   .about {
