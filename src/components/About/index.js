@@ -32,7 +32,7 @@ function About() {
 
       
       </div>
-      <a href="#Nav" class="text-indigo-200">Back to Navigation</a>
+      <a href="#Nav" class="text-indigo-200 back-to-nav">Back to Navigation</a>
         </div>
 
     )

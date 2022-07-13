@@ -32,10 +32,10 @@ function Resume() {
   return (
     <div class="info-container">
     <h1 class="pl-2 heading-text">Click to learn more:</h1>
-    <ul class="pl-5 py-2 text-[#e0f2fe] text-[20px]">
+    <ul class="pl-5 py-2 text-[20px]">
         {categories.map((category) => (
           <button
-            className={`mx-1 ${
+            className={`mx-2 btn ${
               currentCategory.name === category.name &&
               "navActive"
             }`}
@@ -60,7 +60,7 @@ function Resume() {
     </div>
     <div>
     <a id="resume" 
-          class="text-[#e0f2fe] text-[18px] flex pr-1"
+          class="text-[#e0f2fe] flex pr-1 download-resume"
           href={MadisonResume} download
         >
           Download resume 💾
@@ -89,7 +89,7 @@ function Resume() {
           <img className='icon'src={facebookIcon} alt="facebook logo"/>
         </a>
       </div>
-      <a href="#Nav" class="text-indigo-200">Back to Navigation</a>
+      <a href="#Nav" class="text-indigo-200 back-to-nav">Back to Navigation</a>
     </div>
   );
 }

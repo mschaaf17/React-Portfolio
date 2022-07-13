@@ -31,7 +31,7 @@ export default function PortfolioContainer() {
         <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
         {renderPage()}
         </div>
-          <footer className ='flex justify-between px-5 text-white'>
+          <footer className ='flex justify-between px-5 text-white footer'>
           <h5>
           ❤️ Made with love by Madison Schaaf </h5>
           <div>

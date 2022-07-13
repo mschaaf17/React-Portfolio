@@ -51,15 +51,15 @@ function Contact() {
         <section class="info-container">
         <h1 class="text-center heading-text">Contact Me</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
-            <div class="text-[24px] ">
+            <div class="form-text ">
                 <label class="p-4 text-white" htmlFor="name">Name:</label>
                 <br /> <input type="text" value={formState.name} onChange={handleChange} name="name"/>
             </div>
-            <div class="text-[24px] pt-3">
+            <div class="form-text pt-3">
                 <label class="p-4 text-white" htmlFor='email'>Email:</label>
                 <br /><input type="email" name="email" value={formState.email} onChange={handleChange}/>
             </div>
-            <div class="text-[24px] pt-3">
+            <div class="form-text pt-3">
                 <label class="pl-5 text-white"htmlFor="message">Message:</label>
                 <br /><textarea class="px-3"name="message" rows="3" value={formState.message} onChange={handleChange}/>
 
@@ -72,12 +72,12 @@ function Contact() {
             <button class="text-[16px] text-white mt-2" type ="submit">Submit</button>
             </form>
             
-        <address class="address text-[16px]">
+        <address class="address">
         <p>Number upon request</p>
        <p> <a class="contact-info" href="mailto:madisonschaaf48@gmail.com">madisonschaaf48@gmail.com</a></p>
         {/* <p><a class="contact-info" href="https://github.com/mschaaf17">github.com/mschaaf17</a></p> */}
         </address>
-        <a href="#Nav" class="text-indigo-200">Back to Navigation</a>
+        <a href="#Nav" class="text-indigo-200 back-to-nav">Back to Navigation</a>
         </section>
         
         
