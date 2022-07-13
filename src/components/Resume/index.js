@@ -31,7 +31,7 @@ function Resume() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   return (
     <div class="info-container">
-    <h1 class="pl-2">Click to learn more:</h1>
+    <h1 class="pl-2 text-[48px]">Click to learn more:</h1>
     <ul class="pl-5 py-2 text-[#e0f2fe] text-[20px]">
         {categories.map((category) => (
           <button
