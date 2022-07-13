@@ -332,7 +332,10 @@ input, textarea {
     height: 80px;
   }
   .about {
-    font-size: 12px;
+    font-size: 11px;
+  }
+  .follow {
+    padding: 1px 10vw;
   }
 }
 @media (max-width: 730px) {
