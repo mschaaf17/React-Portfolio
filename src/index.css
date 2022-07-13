@@ -405,7 +405,7 @@ input, textarea {
 
 @media (max-width: 765px ) {
   .about {
-    font-size: 16px;
+    font-size: 18px;
   }
   .follow {
   padding: 2px 10vw;
@@ -417,7 +417,7 @@ input, textarea {
     height: 80px;
   }
   .about {
-    font-size: 11px;
+    font-size: 18px;
   }
   .follow {
     padding: 1px 10vw;
@@ -451,7 +451,7 @@ input, textarea {
 
 @media (max-width: 726px) {
   .about {
-    font-size: 16px;
+    font-size: 18px;
   }
   .flex-section {
     display: flex;
@@ -471,7 +471,7 @@ input, textarea {
 
 @media (max-width: 580px) {
   .about {
-    font-size: 12px;
+    font-size: 16px;
   }
     
   .heading-text, h2 {
@@ -574,7 +574,7 @@ input, textarea {
 }
  @media ( max-width: 384px ) {
   .about {
-    font-size: 12px;
+    font-size: 14px;
   }
 
  }
