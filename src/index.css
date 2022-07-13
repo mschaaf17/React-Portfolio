@@ -358,6 +358,17 @@ input, textarea {
 }
 }
 
+@media (max-width: 726px) {
+  .about {
+    font-size: 11px;
+  }
+  .heading-text, h2 {
+    font-size: 32px;
+  }
+  .follow {
+    padding: 0px 10vw;
+  }
+}
 
 @media (max-width: 705px) {
   .about {
