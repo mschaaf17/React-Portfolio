@@ -322,6 +322,9 @@ input, textarea {
   .about {
     font-size: 14px;
   }
+  .follow {
+  padding: 2px 10vw;
+}
 }
 @media (max-width: 744px) {
   .single-project-img {
