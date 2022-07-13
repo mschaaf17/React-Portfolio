@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.1d6c99ec.css",
+    "main.css": "/React-Portfolio/static/css/main.a708d919.css",
     "main.js": "/React-Portfolio/static/js/main.0a19c9bb.js",
     "static/media/park-advisor.PNG": "/React-Portfolio/static/media/park-advisor.f1da6218f7eedcd72d3a.PNG",
     "static/media/stacked.png": "/React-Portfolio/static/media/stacked.475063d37fb9229fe40d.png",
@@ -13,11 +13,11 @@
     "static/media/background.jpeg": "/React-Portfolio/static/media/background.ea1212662a65a109d735.jpeg",
     "static/media/password.png": "/React-Portfolio/static/media/password.2abfb19b1895817ec268.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.1d6c99ec.css.map": "/React-Portfolio/static/css/main.1d6c99ec.css.map",
+    "main.a708d919.css.map": "/React-Portfolio/static/css/main.a708d919.css.map",
     "main.0a19c9bb.js.map": "/React-Portfolio/static/js/main.0a19c9bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d6c99ec.css",
+    "static/css/main.a708d919.css",
     "static/js/main.0a19c9bb.js"
   ]
 }
