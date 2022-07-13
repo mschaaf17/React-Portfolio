@@ -471,11 +471,22 @@ input, textarea {
 
 @media (max-width: 580px) {
   .about {
-    font-size: 12px;
+    font-size: 11px;
   }
     
   .heading-text, h2 {
     font-size: 30px;
+  }
+  .icon {
+    height: 20px;
+    padding-top: 2px;
+  }
+  
+  .facebook {
+    height: 20px;
+  }
+  .follow{
+    padding: 1px 10vw;
   }
 
 
