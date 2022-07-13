@@ -313,6 +313,9 @@ input, textarea {
   text-align: center;
   font-size: 12px;
 }
+.heading-text, h2 {
+  font-size: 40px;
+}
 }
 
 @media (max-width: 730px) {
@@ -333,6 +336,9 @@ input, textarea {
   text-align: center;
   font-size: 12px;
 }
+.heading-text, h2 {
+  font-size: 38px;
+}
 }
 
 
@@ -351,6 +357,9 @@ input, textarea {
     object-fit: cover;
     
   }
+  .heading-text, h2 {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -363,6 +372,9 @@ input, textarea {
     max-width: 40%;
     object-fit: cover;
     
+  }
+  .heading-text, h2 {
+    font-size: 30px;
   }
 
 
