@@ -360,10 +360,10 @@ input, textarea {
 
 @media (max-width: 726px) {
   .about {
-    font-size: 11px;
+    font-size: 10px;
   }
   .heading-text, h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
   .follow {
     padding: 0px 10vw;
