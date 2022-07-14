@@ -488,6 +488,15 @@ input, textarea {
   .follow{
     padding: 1px 10vw;
   }
+  .btn {
+    font-size: 12px;
+  }
+  .download-resume {
+    font-size: 18px;
+  }
+  .resume-info {
+    font-size: 16px;
+  }
 
 
 }
@@ -532,8 +541,9 @@ input, textarea {
   font-size: 20px;
 }
 .resume-info {
-  font-size: 16px;
+  font-size: 14px;
 }
+
 
 }
 @media (max-width: 400px) {
@@ -585,6 +595,7 @@ input, textarea {
   }
    button {
     font-size: 14px;
+    padding: 5px;
    }
    .icon {
     border-radius: 75px;

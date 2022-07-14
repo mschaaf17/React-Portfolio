@@ -15,7 +15,7 @@ function Resume() {
     },
     {
       name: "Education",
-      description: "Full Stack Development | University of Utah | June 2022",
+      description: "Full Stack Development Certificate | University of Utah | June 2022",
       more: "Master of Education, Special Education | University of Utah | December 2020",
       andMore:
         "Bachelor of Science, Psychology | University of Utah | May 2016 ",
