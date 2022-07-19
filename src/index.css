@@ -51,6 +51,11 @@ code {
   0 0 20px #74b7c3, 0 0 30px #98a2a3,
   0 0 40px #3b9ae8;
 }
+
+.back-to-nav {
+  color: white;
+  display: none;
+}
 /* }
 h1, h2 {
   font-size: 48px;
@@ -456,6 +461,9 @@ input, textarea {
   .flex-section {
     display: flex;
     flex-direction: column;
+  }
+  .back-to-nav {
+    display: inline;
   }
   .self {
     margin: auto;

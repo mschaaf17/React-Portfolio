@@ -91,7 +91,7 @@ function Portfolio() {
 
             
         </div>
-        <a href="#Nav" class="text-indigo-200 back-to-nav">Back to Navigation</a>
+        <a href="#Nav" class="back-to-nav">Back to Navigation</a>
         </div>
         
 
