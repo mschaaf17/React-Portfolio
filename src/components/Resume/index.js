@@ -10,7 +10,7 @@ function Resume() {
     {
       name: "Technical Skills",
       description:
-        "HTML 5, CSS, Bootstrap, Tailwind, Bulma, Javascript, Node.js, MySQL, Sequelize, Handlebars, MongoDB, Mongoose, Express, React, Git, & various npm packages",
+        "HTML 5, CSS, Bootstrap, Tailwind, Javascript, Node.js, MySQL, Sequelize, Handlebars, MongoDB, Mongoose, Express, React, GraphQl, Git, & various npm packages",
       more: "",
     },
     {
@@ -24,7 +24,7 @@ function Resume() {
       name: "Work Experience",
       description: "Educator",
       more: "Enrollment Counselor",
-      andMore: "Building Supervisor/Tennis Program Manager",
+      andMore: "Building Supervisor/Program Manager",
     },
   ]);
 
