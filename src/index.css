@@ -279,10 +279,11 @@ input, textarea {
   border-radius: 8px;
 }
 .address {
-  padding: 10px 5px;
+  padding: 15px 5px;
   color: white;
-  font-size: 16px;
-  text-shadow: 0 0 5px #2a85df, 0 0 10px #5aaebd,
+  font-size: 24px;
+  text-align: center;
+    text-shadow: 0 0 5px #2a85df, 0 0 10px #5aaebd,
   0 0 20px #74b7c3, 0 0 30px #bbdcdf,
   0 0 40px #3b9ae8;
 }
